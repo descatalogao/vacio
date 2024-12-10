@@ -1,0 +1,50 @@
+#finder{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+#search{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    width: 60%;
+}
+#search input{
+    text-align: center;
+    height: 22px;
+    border: 0.5px solid black;
+    border-radius: 9px;
+    width: 90%;
+}
+#search button{
+    cursor: pointer;
+    background-color: rgb(255, 117, 117);
+    border: transparent;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+}
+#search button:hover{
+    color: white;
+}
+
+.filters{
+    cursor: pointer;
+}
+
+@media (max-width:550px){
+
+#finder{
+    gap: 10px;
+justify-content: center;
+}
+#finder .filters {
+     gap:10px;
+ }
+}
+
+#filterByBtn:hover, #sortByBtn:hover{
+        filter: invert(0.8) brightness(1.4);
+    
+}
+

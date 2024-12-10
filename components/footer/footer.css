@@ -1,0 +1,17 @@
+footer{
+    font-size: 13px;
+    gap:13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(92, 92, 92);
+    color: white;
+}
+
+@media (max-width:360px){
+    footer{
+        font-size: 9px;
+    }
+}

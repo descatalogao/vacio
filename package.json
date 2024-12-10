@@ -1,0 +1,17 @@
+{
+  "name": "motocenter_final",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "homepage": "https://descatalogao.github.io/motocenter_final"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "vite": "^5.4.0"
+  }
+}

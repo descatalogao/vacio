@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* //FILTROS */
+.filters{
+    display: flex;
+    gap: 50px;
+}
+.filters div{
+    border-radius: 9px;
+    margin: auto;
+    background-color: gray;
+}
+.filters div img{
+    width:35px;
+    height:35px;
+    filter: invert(1) brightness(2);
+    position: relative;
+    top: 2px;
+}
+
+#filterBy, #sortBy{
+    cursor: pointer;
+}
+
+#filterByPanel{
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: black 10px 10px 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 63vw;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#filterByPanel .title{
+height: 6vh;
+background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 202, 202) 120%);
+border-bottom: 2px solid rgb(0, 0, 0);
+padding-bottom: 10px;
+
+}
+
+#filterByPanel div h2{
+    transform: skew(-8deg);
+    letter-spacing: 0.3px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    margin:  12px 0 9px 0;
+
+}
+
+#filterByPanel #filterList{
+    z-index: 6;
+    margin:20px;
+    padding: 0 20px;
+    overflow-y: scroll;
+    gap:20px;
+    list-style-type: none;
+    display: grid;
+    align-items: end;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+#filterByPanel #filterList li{
+    margin: 0;
+    width: 26.3vw;
+    height: fit-content;
+    border: none;
+    z-index: 6;
+    border-radius: 0 10px;
+    background: linear-gradient(#ff6868 -110%, #ffffff);
+    min-height: 17.5vh;
+}
+
+
+
+
+div#box{
+    z-index: 7;
+    text-align: left;
+    transform: skew(20deg);
+    box-shadow: rgb(142, 22, 22) 5px 5px 5px;
+    margin: 4px 0 0 0px;
+    width: 70%;
+    background-color: rgb(255, 121, 121);
+}
+#boxShadow{
+    z-index: 6;
+    transform: skew(20deg);
+    position:relative;
+    top:-19.8px;
+    left: 15px;
+    z-index: -1;
+    height: 22px;
+    width: 70%;
+    background-color: rgba(71, 71, 71, 0.58);
+}
+div#box p{
+    z-index: 7;
+    text-shadow: rgb(142, 22, 22) 2px 2px 2px; ;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 700;
+    transform: skew(-20deg);
+    position:relative;
+    margin: 0 0 0 13px;
+}
+
+#filterList li div#interactible{
+    display: inline-block;
+    z-index: 8;
+}
+
+#sendFilters{
+    transform: scale(0.6);
+    letter-spacing: 1px;
+    font-family: "Racing Sans One", sans-serif;
+    z-index: 9;
+    display: inline-block;
+    position: absolute;
+    right: 0.7em;
+    box-shadow:  rgb(92, 51, 51) 4px 4px 12px; ;
+    margin: 0;
+    cursor: pointer;
+    border:none;
+    border-radius: 50%;
+    width:2em; height:2em;
+    font-size: 3em;
+    font-weight: 700;
+    color: rgb(77, 25, 25);
+    background:linear-gradient(25deg, rgb(252, 111, 111) , rgb(255, 255, 255));
+    text-shadow: rgba(0, 0, 0, 0.221) 3px 3px 3px; ;
+    transition: 0.5s ease;
+}
+
+#sendFilters:hover{
+    transform: scale(0.9) rotate(360deg);
+}
+
+button#resetFlt{
+    margin-top: 5px;
+    color: azure;
+    padding: 2.7px;
+    cursor: pointer;
+    background-color: rgb(255, 117, 117);
+    border: transparent;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 9px;
+}
+
+#license div, #condition div, #guarantee div{
+    text-wrap:nowrap ;
+    margin: auto;
+    overflow: visible;
+    max-width: 100px;
+    justify-content: start;
+    gap: 5px;
+    text-align: left;
+    display:flex;
+    text-align: center;
+}
+
+
+#license div label, #condition div label, #guarantee div label{
+    font-size: smaller;
+    min-width: 30px;
+}
+
+/* Contenedor */
+#cc {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+/* Estilos para Chrome, Safari, Edge y Opera */
+#cilindrada {
+    -webkit-appearance: none; /* Eliminar el estilo predeterminado del input range */
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  #cilindrada::-webkit-slider-thumb {
+    position: relative;
+    top: -4px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 106, 106); /* Cambiar color del deslizador a rojo */
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+  
+  #cilindrada::-webkit-slider-runnable-track {
+    background: rgb(255, 147, 147); /* Cambiar color de la barra a rojo */
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  
+#cilindrada output {
+    color: #000000;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+@media (max-width: 970px) {
+    #filterByPanel #filterList{
+        margin-bottom: 100px;
+        grid-template-columns: 1fr;
+    }
+    #filterByPanel #filterList li{
+        width: auto;
+    }
+    #sendFilters{
+        position: absolute;
+        left: 82%;
+    }
+    
+}

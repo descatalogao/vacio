@@ -1,0 +1,112 @@
+#shopContainer{
+    overflow-y: auto;
+    height: fit-content;
+    max-height: 2000px;
+    justify-items: center;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
+}
+
+#shopContainer h2{
+    padding: 29px 0;
+    text-align: center;
+    justify-content: center;
+    grid-column: 1 / -1;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    margin: 10px;
+    width : 250px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card h2{
+    font-size:1.25em;
+    text-transform: uppercase;
+    padding: 15px 0 0 0;
+}
+
+.card .img{
+    padding: 8px;
+    object-fit: cover;
+    height: 140px;
+    margin: 0 auto;
+    width: 90%;
+    /* padding: 25% 17%; */
+}
+
+.card ul{
+    max-height: 40px;
+    height: 40px;
+    margin:-22px auto 0 auto;
+    width: 90%;
+}
+.card .h2{
+    margin: auto;
+    white-space: nowrap;
+    max-width: 90%;
+    overflow: clip;
+}
+.card h2:hover{
+    transition: 8s;
+    transform: translateX(-40%);
+}
+.card ul li{
+    white-space: nowrap;
+    display: inline-block;
+    flex-direction: row;
+    max-width: 90px;
+    border-radius: 7px;
+    padding: 0 7px;
+    text-align: center;
+    margin: 0 3px;
+    background: linear-gradient(rgba(43, 144, 227, 0.308), rgb(186, 255, 250)
+    );
+    list-style-type: none;
+    overflow: clip;
+}
+
+.card ul li p{
+display: flex;
+}
+.card ul li p:hover{
+    transition-timing-function: linear;
+    transition: 6.5s;
+    transform: translateX(-280%);
+}
+
+#articleViews{
+    font-size: 14px;
+    color: grey;
+    width: fit-content;
+    margin: 2px 9px;
+}
+
+.card button{
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+    border: none;
+    color: white;
+    background: linear-gradient(rgb(182, 29, 29), rgb(228, 123, 123)
+    );
+    padding: 10px 80px;
+    margin: 12px auto ;
+}
+
+.card p {
+    font-size: small;
+}
+
+.card #info {
+    font-size: 10.4px;
+}

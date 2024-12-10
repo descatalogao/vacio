@@ -1,0 +1,18 @@
+#cartPanel {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:left;
+    display: none;
+    position: fixed;
+    height: 400px;
+    width: 200px;
+    z-index: 99;
+    color: rgb(0, 0, 0);
+    background-color: rgb(207, 207, 207);
+}
+
+#cartPanel div {
+    width: 89%;
+}

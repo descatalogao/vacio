@@ -1,0 +1,38 @@
+.cartElement{
+    margin-top: 10px;
+    min-height: 58px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto;
+    background-color: rgba(224, 250, 250, 0.635);
+    width: 100%;
+}
+.cartElement *{
+    text-align: center;
+    font-size: 10px;
+}
+.cartElement img{
+    grid-row: 1 / 5;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+    height: 30px;
+    width: 50px;
+}
+
+.cartElement h2#title{
+    text-wrap: nowrap;
+    overflow: hidden;
+    grid-column: 2/4;
+}
+.cartElement h2#info{
+    grid-column: 2/4;
+    color: rgb(188, 105, 105);
+    font-size: 7px;
+}
+
+.cartElement button{
+    grid-column: 3/4;
+    margin: auto;
+    width: 50px
+}

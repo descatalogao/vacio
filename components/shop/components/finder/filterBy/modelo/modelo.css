@@ -1,0 +1,17 @@
+#model{
+    margin: auto;
+    width: 80%;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#model label {
+    font-size: 13px;
+}
+
+#model select {
+    margin: 5px;
+    font-size: 10px;
+    width: 70%;
+}
