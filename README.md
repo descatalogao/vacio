@@ -101,8 +101,9 @@ Puedes visitar la tienda de motos desplegada aquí:
 Si quieres, añade aquí imágenes de tu proyecto en acción para que sea más visual:
 
 ```html
-![hero](./public/assets/scshots/hero.png)
-![hero](./public/assets/scshots/sections.png)
-![hero](./public/assets/scshots/shop.png)
-![hero](./public/assets/scshots/filterby.png)
-![hero](./public/assets/scshots/ordenarpor.png)
+![Hero](./screenshots/hero.png)
+![Secciones](./screenshots/sections.png)
+![Tienda](./screenshots/shop.png)
+![Filtrado](./screenshots/filterby.png)
+![Ordenación](./screenshots/ordenapor.png)
+
