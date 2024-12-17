@@ -100,7 +100,7 @@ Puedes visitar la tienda de motos desplegada aquí:
 
 Si quieres, añade aquí imágenes de tu proyecto en acción para que sea más visual:
 
-```html
+<!-- ```html -->
 ![Hero](./screenshots/hero.png)
 ![Secciones](./screenshots/sections.png)
 ![Tienda](./screenshots/shop.png)
