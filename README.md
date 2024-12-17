@@ -98,12 +98,13 @@ Puedes visitar la tienda de motos desplegada aquí:
 
 ## 📸 Capturas de pantalla (opcional)
 
-Si quieres, añade aquí imágenes de tu proyecto en acción para que sea más visual:
-
-<!-- ```html -->
 ![Hero](./screenshots/hero.png)
+
 ![Secciones](./screenshots/sections.png)
+
 ![Tienda](./screenshots/shop.png)
+
 ![Filtrado](./screenshots/filterby.png)
-![Ordenación](./screenshots/ordenapor.png)
+
+![Ordenación](./screenshots/ordenarpor.png)
 
