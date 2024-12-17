@@ -87,7 +87,7 @@ div#box {
   text-align: left;
   transform: skew(20deg);
   box-shadow: rgb(142, 22, 22) 5px 5px 5px;
-  margin: 4px 0 0 0px;
+  margin: 9px 0 0 0px;
   width: 70%;
   background-color: rgb(255, 121, 121);
 }

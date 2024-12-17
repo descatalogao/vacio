@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 6px;
-  height: 12.8vh;
+  height: 9.8vh;
   overflow: visible; /* Oculta cualquier contenido que se desborde */
 }
 
