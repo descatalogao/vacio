@@ -1,2 +1,2 @@
-const cartObjects =[];
-export default cartObjects
+const cartObjects = [];
+export default cartObjects;

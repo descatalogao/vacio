@@ -1,9 +1,9 @@
 import "./sections.css";
 
-const sections = ()=>{
-    const app = document.querySelector('#app');
-    const sections = document.createElement('section');
-    sections.innerHTML=`
+const sections = () => {
+  const app = document.querySelector("#app");
+  const sections = document.createElement("section");
+  sections.innerHTML = `
         <article>
           <img src='assets/icons/garantia.png'>
           <h2> Garantía MC Prime </h2>
@@ -25,9 +25,8 @@ const sections = ()=>{
           <p>¡Genial!</p><p> Estamos aquí para asesorarte, aquí tu mismo puedes formar parte de Moto Center. La tasación será <b>online</b> con uno de nuestros peritos. </p><p> Te tasamos la moto a un módico precio, y si te parece bien...</p><p> ¡Te olvidas de todo el papeleo que va luego y tienes el dinero cuanto antes!</p>
           </div>
         </article>
-    `
-    app.appendChild(sections)
-  }
+    `;
+  app.appendChild(sections);
+};
 
-  export default sections;
-  
+export default sections;

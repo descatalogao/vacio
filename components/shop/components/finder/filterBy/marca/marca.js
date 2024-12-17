@@ -1,4 +1,4 @@
-import "./marca.css"
+import "./marca.css";
 const marca = `
 <li>
     <div id='box'>
@@ -14,4 +14,4 @@ const marca = `
 </li>
 `;
 
-export default marca
+export default marca;

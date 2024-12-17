@@ -15,7 +15,9 @@ const sortByPanel = () => {
   const filterSearchResults = (value) => {
     let filteredMotos = [];
     products.forEach((moto) => {
-      const activeSearch = ((moto.brand + moto.model + moto.tipo).toLowerCase()).replace(/[\s-]+/g, "");
+      const activeSearch = (moto.brand + moto.model + moto.tipo)
+        .toLowerCase()
+        .replace(/[\s-]+/g, "");
       if (activeSearch.includes(value)) {
         filteredMotos.push(moto);
       }
@@ -25,17 +27,19 @@ const sortByPanel = () => {
 
   // Función para ordenar y filtrar productos
   const sortProducts = () => {
-    let modelos =[]
+    let modelos = [];
     const radios = document.querySelectorAll("#radios input[type='radio']");
     radios.forEach((radio) => {
       radio.addEventListener("click", () => {
         const container = document.querySelector("#shopContainer");
-        modelos = filterProducts()
-        console.log(products)
-        console.log(modelos)
+        modelos = filterProducts();
+        console.log(products);
+        console.log(modelos);
 
         const search = document.querySelector("#search > input");
-        const value = search ? search.value.toLowerCase().replace(/[\s-]+/g, "") : "";
+        const value = search
+          ? search.value.toLowerCase().replace(/[\s-]+/g, "")
+          : "";
 
         // Filtrar productos si hay valor de búsqueda
         if (value !== "") {
@@ -58,20 +62,22 @@ const sortByPanel = () => {
     });
 
     // Manejo de eventos de los botones de reset y cierre del panel
-    document.querySelector("#sortByPanel").addEventListener("click", (event) => {
-      const target = event.target;
+    document
+      .querySelector("#sortByPanel")
+      .addEventListener("click", (event) => {
+        const target = event.target;
 
-      if (target.id === "reset") {
-        const radios = sortByPanel.querySelectorAll("input[type='radio']");
-        radios.forEach((radio) => (radio.checked = false));
-        const container = document.querySelector("#shopContainer");
-        const modelos = filterProducts();
-        container.innerHTML = "";
-        createCards(modelos, container);
-      } else if (target.id === "go") {
-        sortByPanel.classList.toggle("hidden");
-      }
-    });
+        if (target.id === "reset") {
+          const radios = sortByPanel.querySelectorAll("input[type='radio']");
+          radios.forEach((radio) => (radio.checked = false));
+          const container = document.querySelector("#shopContainer");
+          const modelos = filterProducts();
+          container.innerHTML = "";
+          createCards(modelos, container);
+        } else if (target.id === "go") {
+          sortByPanel.classList.toggle("hidden");
+        }
+      });
   };
 
   // Crear contenido HTML del panel

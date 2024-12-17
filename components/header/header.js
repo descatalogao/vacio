@@ -1,10 +1,10 @@
 import "./header.css";
 import cartPanel from "./cartPanel/cartPanel";
 
-const header = ()=>{
-    const app = document.querySelector('#app');
-    const header = document.createElement('header');
-    header.innerHTML=`
+const header = () => {
+  const app = document.querySelector("#app");
+  const header = document.createElement("header");
+  header.innerHTML = `
 
     <div class="headerLogo">
       <div class="icono-moto">
@@ -25,12 +25,9 @@ const header = ()=>{
       <li id='headerCart'><img src='./assets/icons/cart.png'></li>
     </ul>
     
-    `
-    app.appendChild(header)
+    `;
+  app.appendChild(header);
 
-    cartPanel()
-    
-  }
-  ;
-  
-export default header
+  cartPanel();
+};
+export default header;

@@ -1,4 +1,4 @@
-import "./modelo.css"
+import "./modelo.css";
 const modelo = ` <li>
     <div id='box'>
     <p>MODELO</p>

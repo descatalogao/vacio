@@ -1,4 +1,4 @@
-import "./tipo.css"
+import "./tipo.css";
 const tipo = `<li>
     <div id='box'>
     <p>TIPO</p>
@@ -26,8 +26,5 @@ const tipo = `<li>
         <h3 id="current-item-id">1</h3>
     </div>
     </li>`;
-
-
-    
 
 export default tipo;

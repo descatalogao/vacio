@@ -1,4 +1,4 @@
-const carne= ` <li>
+const carne = ` <li>
     <div id='box'>
     <p>CARNÉ</p>
     </div>
