@@ -96,7 +96,7 @@ Puedes visitar la tienda de motos desplegada aquí:
 
 ---
 
-## 📸 Capturas de pantalla (opcional)
+## 📸 Capturas de pantalla
 
 ![Hero](./screenshots/hero.png)
 
